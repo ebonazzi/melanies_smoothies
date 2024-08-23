@@ -7,7 +7,7 @@ st.title("Customize Your Smoothie :balloon:")
 st.write(
     """Choose the fruits you want in your custom Smoothie!
     """)
-cnx = st_connection("snowflake")
+cnx = st.connection("snowflake")
 session = cnx.session()
 name_on_order = st.text_input('Name on Smoothie: ')
 st.write('The name on your Smoothie will be: ',name_on_order)
